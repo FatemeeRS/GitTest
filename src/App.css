@@ -1,0 +1,423 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  --font-light-color: #ffffff;
+  --font-dark-color: #000000;
+  --light-blue: #8baad6;
+}
+
+.left-side {
+  margin-left: 10rem;
+}
+.right-side {
+  margin-right: 10rem;
+}
+
+/* Font */
+
+body,
+input,
+textarea,
+select {
+  font-family: Verdana, Geneva, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* It is the menu in header */
+
+nav {
+  position: fixed;
+  background-color: var(--font-dark-color);
+  width: 100%;
+  height: 5%;
+  color: var(--font-light-color);
+  font-variant: small-caps;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.fix {
+  display: flex;
+  width: 50%;
+}
+
+nav ul li,
+.spaces {
+  margin-left: 1rem;
+}
+
+.nav-value {
+  border-left: 1px solid gray;
+  height: 1.2rem;
+}
+
+.information {
+  direction: rtl;
+}
+
+.information > div {
+  display: flex;
+  direction: ltr;
+}
+
+a {
+  color: var(--font-light-color);
+  margin-left: 1rem;
+}
+
+.information > .nav-value {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.bi-house-door-fill {
+  color: var(--light-blue);
+}
+
+/*  */
+/* ..................(header).............*/
+
+header {
+  background: linear-gradient(to bottom, #171717be, #171717be),
+    url("../public/img/01.png");
+  background-size: cover;
+  padding: 1rem 0;
+  width: 100%;
+  height: 80vh;
+}
+
+.head-content {
+  padding-top: 1rem;
+}
+
+.button,
+.head-content > p,
+span,
+h1 {
+  color: var(--font-light-color);
+}
+
+.head-content > h1,
+p,
+button {
+  font-variant: small-caps;
+}
+
+.head-content > p {
+  font-style: normal;
+  font-size: 3rem;
+  margin-top: 10rem;
+  font-family: monospace;
+}
+
+.head-content > h1 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  font-family: "firstfont";
+  margin: 1rem 0 1rem 0;
+}
+
+.head-content > span {
+  font-size: .9rem;
+}
+
+.button {
+  background-color: var(--light-blue);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  width: 15%;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;
+}
+
+/*............................(main)...........................*/
+
+main > p {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 6rem 0;
+}
+
+main > p::first-line {
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-size: 1.8rem;
+}
+
+.hline {
+  width: 80%;
+  height: 1px;
+  background: #ccc;
+  margin-left: 11.5rem;
+}
+
+main div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10rem;
+  margin-bottom: 6rem;
+}
+
+.main-box {
+  width: 40vw;
+  height: 60vh;
+  border: 1px solid var(--font-light-color);
+  box-shadow: 0 0.25rem 0.5rem 0 #eeeeee, 0 0.4rem 1.25rem 0 #eeeeee;
+  flex-direction: column;
+  padding: 3rem;
+  margin: 2rem;
+}
+
+.main-box > span {
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid #eeeeee;
+  border-radius: 50%;
+  display: block;
+  padding: 1.35rem;
+}
+
+.main-box > h5 {
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+.main-box > p {
+  font-size: 1.3rem;
+  font-size: medium;
+  text-align: center;
+  font-variant: normal;
+}
+
+.main-box > .button {
+  width: 40%;
+  font-size: large;
+}
+
+.bi-box, .bi-broadcast-pin , .bi-hand-index-thumb{
+  color: var(--light-blue);
+  font-size: 2.8rem;
+}
+
+.bi-box::before ,.bi-broadcast-pin::before , .bi-hand-index-thumb::before {
+  content: "\f1c8";
+  align-items: center;
+  text-align: center;
+  padding-left: .2rem;
+  padding-bottom: .2rem;
+}
+
+
+
+/*...................................(footer).........................*/
+
+footer {
+  background-color: #01325d;
+}
+
+.box-footer {
+  display: flex;
+  padding: 80px 180px;
+  align-items: center;
+}
+
+.box-footer > div {
+  margin: auto;
+  width: 300px;
+  height: 400px;
+  text-align: left;
+  margin: 50px;
+}
+
+.box-footer div > h3 {
+  text-transform: capitalize;
+  font-variant: small-caps;
+  color: #effbfd;
+  margin-bottom: 50px;
+}
+
+.box-footer div > a,
+p,
+input {
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+.behind-box,
+.behind-box div > p {
+  color: #a0a3a5;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  font-weight: 400;
+}
+
+.icon-style {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon-style > i {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.other-app {
+  width: 300px;
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: row;
+}
+
+.other-app > span {
+  background-color: #012b50;
+  border-radius: 50%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.other-app span > i {
+  margin-top: -2px;
+  font-size: 20px;
+}
+
+.between-box > a {
+  color: #5792cd;
+  display: flex;
+  margin: 10px;
+}
+
+.behind-box > div input {
+  margin-bottom: 15px;
+  width: 90%;
+  height: 35px;
+  border-radius: 8px;
+  color: #62696b;
+  background-color: #012b50;
+}
+
+.behind-box > div .button {
+  margin-top: 0.5rem;
+  width: 35%;
+}
+.underline {
+  border-bottom: 1px solid #16446b;
+  margin: 5px;
+}
+
+/*               vfffffffddddddddddddddddddd                                   */
+
+@media screen and (max-width: 1110px) {
+  nav {
+    font-size: small;
+  }
+  .left-side {
+    margin-left: 1rem;
+  }
+  .right-side {
+    margin-right: 1rem;
+  }
+  .button {
+    font-size: 0.5rem;
+    height: 2rem;
+  }
+  .head-content > p {
+    font-size: 2rem;
+    margin-top: 8rem;
+  }
+
+  .head-content > h1 {
+    font-size: 3rem;
+  }
+
+  .head-content > span {
+    font-size: 0.9rem;
+  }
+
+  .main-box {
+    width: 50vw;
+    height: 55vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    height: 100%;
+    width: 20%;
+  }
+  nav,
+  .fix,
+  nav ul li,
+  .spaces,
+  .information > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  .fix,
+  nav ul li,
+  .bi-telephone-fill {
+    margin-top: 1rem;
+  }
+  .nav-value {
+    border-bottom: 1px solid gray;
+    width: 1.2rem;
+    border-left: none;
+  }
+  .show-icon {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .head-content {
+    margin: 0 10% 0 30%;
+    align-items: center;
+  }
+  .button {
+    font-size: 0.5rem;
+    height: 2rem;
+    width: 30%;
+  }
+  .head-content > p {
+    font-size: 1.75rem;
+    margin-top: 8rem;
+  }
+
+  .head-content > h1 {
+    font-size: 2.4rem;
+  }
+
+  .head-content > span {
+    font-size: 0.7rem;
+  }
+}
